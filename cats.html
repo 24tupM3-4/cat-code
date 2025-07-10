@@ -53,19 +53,46 @@
 </head>
 <body>
 
-<h2 style="font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif'"> </h2>
- 
-<img src="bobtail.jpg" id="japanbob" alt="jpb" style="float: left">
-<h2 style="text-align: absolute; right: 100px ;font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif'">Japanese bobtail</h2>
-<h4 style="font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif'">The Japanese Bobtail  is a breed of domestic cat with an unusual bobtail more closely resembling the tail of a rabbit than that of other cats. The breed was first developed in Japan, and registered officially in the 1960s. The breed has been known in Japan for centuries, and it frequently appears in traditional folklore and art. Japanese Bobtails are believed to be derived from domestic and feral populations of kinked-tailed cats widespread throughout Southeast Asia and southern China.</h4>
-	
-<img src="Sphynx.jpg" id="Sphynx" alt="Spnx" style="float: right">
-<h2 style="font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif';position: sticky" >Sphynx cat</h2>
-<h4 style="font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif'">The Sphynx cat, also known as the Canadian Sphynx, is a unique breed recognized for its hairless body, prominent ears, and expressive wrinkles. This breed is known for its affectionate and social nature, making them loyal companions. Sphynx cats are energetic, highly intelligent, and often described as being almost dog-like in their friendliness towards both family and strangers. They were developed through selective breeding starting in the 1960s, stemming from a natural genetic mutation that resulted in hairlessness</h4>
+<section id="exotic-cats">
+  <h2>Featured Exotic Cats</h2>
+  <div class="cat-grid">
+    <!-- Bengal Cat -->
+    <div class="cat-card">
+      <img src="https://example.com/bengal.jpg" alt="Bengal Cat" />
+      <h3>Bengal Cat</h3>
+      <p>Active and wild-looking. Bengals are playful and intelligent.</p>
+      <div class="cat-buttons">
+        <a href="#">Info</a>
+        <a href="#">Gallery</a>
+        <a href="#">Adopt</a>
+      </div>
+    </div>
 
-<img src="KhaoManee.jpg" id="khao" alt="white" style="float: left">
-<h2 style="font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif';position: sticky" >Khao Manee cat</h2>
-<h4 style="font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif'">The Khao Manee cat also known as the Diamond Eye cat, is a rare, natural breed of domestic cat originating in Thailand, which has an ancient ancestry tracing back hundreds of years. They are mentioned in the Tamra Maew (Cat Book Poems)Khao Manee cats are short-haired solid-white cats.</h4>
+    <!-- Savannah Cat -->
+    <div class="cat-card">
+      <img src="https://example.com/savannah.jpg" alt="Savannah Cat" />
+      <h3>Savannah Cat</h3>
+      <p>Known for their dog-like behavior and tall, lean build.</p>
+      <div class="cat-buttons">
+        <a href="#">Info</a>
+        <a href="#">Gallery</a>
+        <a href="#">Adopt</a>
+      </div>
+    </div>
+
+    <!-- Caracal -->
+    <div class="cat-card">
+      <img src="https://example.com/caracal.jpg" alt="Caracal" />
+      <h3>Caracal</h3>
+      <p>Elegant wild cats with tufted ears; not recommended as pets.</p>
+      <div class="cat-buttons">
+        <a href="#">Info</a>
+        <a href="#">Gallery</a>
+        <a href="#">Adopt</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 	
 	
@@ -77,6 +104,77 @@
 	 
 	<!--This line of code is from a website from https://www.w3schools.com/howto/howto_css_bottom_nav.asp#:~:text=Learn%20how%20to%20create%20a%20bottom%20navigation%20menu,Navbar%20Tutorial%20to%20learn%20more%20about%20navigation%20bars.-->
 <style>
+
+#exotic-cats {
+  background-color: #fff7f0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cat-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.cat-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+}
+
+.cat-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.cat-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+
+.cat-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* BUTTON GROUP */
+.cat-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cat-buttons a {
+  background-color: #f48c06;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cat-buttons a:hover {
+  background-color: #d97706;
+}
+
+
+
+
+
 	body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
