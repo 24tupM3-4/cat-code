@@ -1,193 +1,208 @@
 <!doctype html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
-	
-  <header>
-    <h1>Explore Exotic Cats. Promote Adoption.</h1>
-    </header>
-	
-	<nav>
-		
-		<ul>
-		    <li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Adoption</a></li>
-			<li><a href="#">Contact</a></li>
-	    </ul>
-	
-	</nav>
-<hr>
+  <title>Exotic Cats & Adoption</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global font */
+    body, h1, h2, h3, h4, h5, h6, p, a, nav, footer {
+      font-family: 'Raleway', sans-serif;
+    }
 
+    body {
+      margin: 0;
+      background-color: #EDE6E1; /* light coffee cream */
+      color: #3C2F2F; /* dark coffee text */
+    }
 
+    header {
+      background-color: #3C2F2F; /* rich dark coffee */
+      color: #EDE6E1; /* cream text */
+      padding: 20px;
+      text-align: center;
+    }
 
+    nav {
+      background-color: #5E4B3C; /* medium coffee */
+    }
 
-<style>
-head,body {
-  font-family: 'Raleway', sans-serif;
-}
+    nav ul {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+    }
 
-    body{background-color: #E4E0E1	}
+    nav a {
+      color: #EDE6E1;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
- 	header {color: #0f0b08}
-		header{ background-color:#fcf4f4 ; padding=15px; text-align: center;border-bottom: 2px inset #0f0b08 
-;border-left: 200px dashed #A67B5B; box-shadow: 1px, 2px, 1px; 
-			
-			
-		}
-		
-		nav{ background-color: #0f0b08}
-		nav ul{display:flex; gap:15px;list-style: none;padding:10px;margin: 0 }
-		nav a{list-style: none}
-	li{text-align: center}
-	
-	.intro {
-  background-color: #fcf4f4 ;
-  padding: 20px 10px;
-}
+    .intro {
+      background-color: #F5ECE6; /* very light coffee cream */
+      padding: 20px 10px;
+      text-align: center;
+    }
 
-</style>
+    #exotic-cats {
+      background-color: #F5ECE6;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-<div class="intro">
-<h2 style="text-align:center">Learn about unique feline species and find ethical adoption centers near you.</h2>
-	<h4 style="text-align:center">Disclaimer: This website promotes awareness to adopting exotic species, while also promoting safe adoption centers to give all pets a better life.</h4>
-</div>
+    .cat-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
 
+    .cat-card {
+      background-color: #FFFFFF;
+      border-radius: 12px;
+      padding: 20px;
+      width: 260px;
+      box-shadow: 0 4px 12px rgba(60, 47, 47, 0.1);
+      transition: transform 0.3s;
+    }
 
+    .cat-card:hover {
+      transform: translateY(-5px);
+    }
 
+    .cat-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
 
+    .cat-card h3 {
+      font-size: 1.2rem;
+      margin: 10px 0 5px;
+    }
+
+    .cat-card p {
+      font-size: 0.95rem;
+      color: #5E4B3C;
+      margin-bottom: 15px;
+    }
+
+    .cat-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .cat-buttons a {
+      background-color: #5E4B3C; /* medium coffee buttons */
+      color: #EDE6E1;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-size: 0.85rem;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .cat-buttons a:hover {
+      background-color: #3C2F2F;
+    }
+
+    footer {
+      background-color: #3C2F2F;
+      color: #EDE6E1;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #EDE6E1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Additional typography spacing */
+    h1, h2 {
+      margin: 20px 0;
+    }
+
+    h3 {
+      margin: 15px 0 8px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+  </style>
 </head>
 <body>
 
-	<br>
-<section id="exotic-cats">
-  <h2>Featured Exotic Cats</h2>
-  <div class="cat-grid">
-    <!-- Bengal Cat -->
-    <div class="cat-card">
-      <img src="bengal.jpg" alt="Bengal Cat" />
-      <h3>Bengal Cat</h3>
-      <p>Active and wild-looking. Bengals are playful and intelligent.</p>
-      <div class="cat-buttons">
-        <a href="#">Info</a>
-        <a href="#">Gallery</a>
-      </div>
-    </div>
+  <header>
+    <h1>Explore Exotic Cats. Promote Adoption.</h1>
+  </header>
 
-    <!-- Savannah Cat -->
-    <div class="cat-card">
-      <img src="savannah.jpg" alt="Savannah Cat" />
-      <h3>Savannah Cat</h3>
-      <p>Known for their dog-like behavior and tall, lean build.</p>
-      <div class="cat-buttons">
-        <a href="#">Info</a>
-        <a href="#">Gallery</a>
-      </div>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Adoption</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Caracal -->
-    <div class="cat-card">
-      <img src="caracal.jpg" alt="Caracal Cat" />
-      <h3>Caracal</h3>
-      <p>Elegant wild cats with tufted ears; not recommended as pets.</p>
-      <div class="cat-buttons">
-        <a href="#">Info</a>
-        <a href="#">Gallery</a>
-      </div>
-    </div>
+  <div class="intro">
+    <h2>Learn about unique feline species and find ethical adoption centers near you.</h2>
+    <h4>Disclaimer: This website promotes awareness to adopting exotic species, while also promoting safe adoption centers to give all pets a better life.</h4>
   </div>
-</section>
 
-	
-	
-	
-	</div>
-	 
-	<!--This line of code is from a website from https://www.w3schools.com/howto/howto_css_bottom_nav.asp#:~:text=Learn%20how%20to%20create%20a%20bottom%20navigation%20menu,Navbar%20Tutorial%20to%20learn%20more%20about%20navigation%20bars.-->
-<style>
+  <section id="exotic-cats">
+    <h2>Featured Exotic Cats</h2>
+    <div class="cat-grid">
+      <!-- Bengal Cat -->
+      <div class="cat-card">
+        <img src="bengal.jpg" alt="Bengal Cat" />
+        <h3>Bengal Cat</h3>
+        <p>Active and wild-looking. Bengals are playful and intelligent.</p>
+        <div class="cat-buttons">
+          <a href="#">Info</a>
+          <a href="#">Gallery</a>
+        </div>
+      </div>
+      <!-- Savannah Cat -->
+      <div class="cat-card">
+        <img src="savannah.jpg" alt="Savannah Cat" />
+        <h3>Savannah Cat</h3>
+        <p>Known for their dog-like behavior and tall, lean build.</p>
+        <div class="cat-buttons">
+          <a href="#">Info</a>
+          <a href="#">Gallery</a>
+        </div>
+      </div>
+      <!-- Caracal Cat -->
+      <div class="cat-card">
+        <img src="caracal.jpg" alt="Caracal Cat" />
+        <h3>Caracal</h3>
+        <p>Elegant wild cats with tufted ears; not recommended as pets.</p>
+        <div class="cat-buttons">
+          <a href="#">Info</a>
+          <a href="#">Gallery</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-#exotic-cats {
-  background-color: #fff7f0;
-  padding: 40px 20px;
-  text-align: center;
-}
+  <h1>Why adopt, not shop?</h1>
+  <h3>Approximately, 2.5 million pets are in adoption centers waiting to be loved. Adopting discourages unethical breeding and gives pets a loving home.</h3>
 
-.cat-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-.cat-card {
-  background-color: white;
-  border-radius: 12px;
-  padding: 20px;
-  width: 260px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.3s;
-}
-
-.cat-card:hover {
-  transform: translateY(-5px);
-}
-
-.cat-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.cat-card h3 {
-  font-size: 1.2rem;
-  margin: 10px 0 5px;
-}
-
-.cat-card p {
-  font-size: 0.95rem;
-  color: #444;
-  margin-bottom: 15px;
-}
-
-.cat-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.cat-buttons a {
-  background-color: #614205;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 5px;
-  font-size: 0.85rem;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.cat-buttons a:hover {
-  background-color: #614205;
-}
-
-	/*Foot 🤤*/
-
-	footer {color: #DBC1AA}
-		footer{ background-color: #382208; padding=15px; text-align: center; box-shadow: 1px, 2px, 1px; height:100}
-		       
-</style>
-	<h1>Why adopt, not shop?</h1>
-	<h3>Approximately, 2.5 Million pets are in adoption centers waiting to be loved and adopted. By adopting a pet instead of buying, it discourages unethical breedings of animals and make the pets feel loved.</h3>
-
-	<br>
-
-<footer>
+  <footer>
     <p>&copy; 2025 Exotic Cats Awareness. All rights reserved.</p>
     <p><a href="#">Contact</a> | <a href="#">Privacy</a> | <a href="#">Disclaimer</a></p>
   </footer>
-
-	
 </body>
 </html>
